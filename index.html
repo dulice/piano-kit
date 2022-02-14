@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+    <h1 class="animate__animated animate__zoomIn">Music Gives A Soul To The World</h1>
+    <section class="container">
+      <div class="key-press">
+        <input class="input" type="text" />
+        <div class="button">
+          <button class="save-btn">Save</button>
+          <button class="del-btn">Delete</button>
+        </div>
+      </div>
+      <div class="keys">
+        <div onClick="run('C3')" class="key c">C</div>
+        <div onClick="run('Db3')" class="key db high-tone">Db</div>
+        <div onClick="run('D3')" class="key d">D</div>
+        <div onClick="run('Eb3')" class="key eb high-tone">Eb</div>
+        <div onClick="run('E3')" class="key e">E</div>
+        <div onClick="run('F3')" class="key f">F</div>
+        <div onClick="run('Gb3')" class="key eb high-tone">Gb</div>
+        <div onClick="run('G3')" class="key g">G</div>
+        <div onClick="run('Ab3')" class="key ab high-tone">Ab</div>
+        <div onClick="run('A2')" class="key a">A</div>
+        <div onClick="run('BB3')" class="key bb high-tone">Bb</div>
+        <div onClick="run('B2')" class="key b">B</div>
+        <div onClick="run('C3')" class="key c">C</div>
+        <div onClick="run('Db3')" class="key db high-tone">Db</div>
+        <div onClick="run('D3')" class="key d">D</div>
+        <div onClick="run('Eb3')" class="key eb high-tone">Eb</div>
+        <div onClick="run('E3')" class="key e">E</div>
+      </div>
+      <ul class="rePlay-list"></ul>
+    </section>
+    <footer>Copyright &#169; 2022 and all rights reserved.</footer>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>

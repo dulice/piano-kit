@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+  background-image: linear-gradient(to right, #d3959b, #bfe6ba);
+}
+
+section {
+  padding-bottom: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Akaya Telivigala", cursive;
+}
+
+.key-press {
+  margin: 3% 30% 0%;
+  display: flex;
+}
+
+.key-press .input {
+  background-color: transparent;
+  outline: none;
+  width: 80%;
+  border-style: none;
+}
+
+.button {
+  display: flex;
+}
+
+button {
+  padding: 10px 15px;
+  border: 1px solid rgb(8, 8, 17);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-left: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+button:hover {
+  background-color: rgb(8, 8, 17);
+  color: white;
+}
+
+.keys {
+  background-color: rgb(8, 8, 17);
+  display: flex;
+  margin: 1% 23% 0%;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.key {
+  background-color: #fff;
+  width: 70px;
+  height: 230px;
+  border: 1px solid;
+  text-align: center;
+  line-height: 25;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.3s;
+  user-select: none;
+  cursor: pointer;
+}
+.key:hover {
+  background-color: #e9e3e3;
+}
+
+.high-tone {
+  z-index: 2;
+  flex-basis: 0;
+  margin-left: -1.5rem;
+  width: 35px;
+  height: 150px;
+  line-height: 15;
+  top: 0;
+  left: 50px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: rgb(8, 8, 17);
+  color: white;
+  border-style: inset;
+  border: 1px solid rgb(8, 8, 17);
+  user-select: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.high-tone:hover {
+  background-color: #272323;
+}
+
+footer {
+  background-color: #e5e5e5;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+ul {
+  margin: 1rem 24%;
+  list-style-type: circle;
+}
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 420px) {
+  .key-press {
+    display: flex;
+    flex-direction: column;
+  }
+  .input {
+    width: 100%;
+  }
+  button {
+    margin-left: 0;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .keys {
+    width: 95%;
+    margin: 1rem auto;
+  }
+  ul {
+    margin: 1rem;
+  }
+  li {
+    margin-bottom: 0;
+  }
+}
