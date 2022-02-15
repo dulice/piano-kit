@@ -57,5 +57,82 @@ saveBtn.addEventListener("click", () => {
     
 })
 
+document.addEventListener("keyup", (e) => {
+
+    switch (e.key) {
+        case 'a':
+            run('C3');
+            break;
+
+        case 'w':
+            run('Db3');
+            break;
+
+        case 's':
+            run('D3');
+            break;
+
+        case 'e':
+            run('Eb3');
+            break;
+
+        case 'd':
+            run('E3');
+            break;
+
+        case 'f':
+            run('F3');
+            break;
+
+        case 'r':
+            run('Gb3');
+            break;
+
+        case 'g':
+            run('G3');
+            break;
+
+        case 'y':
+            run('Ab3');
+            break;
+
+        case 'h':
+            run('A2');
+            break;
+
+        case 'u':
+            run('BB3');
+            break;
+
+        case 'j':
+            run('B2');
+            break;    
+
+        case 'k':
+            run('C3');
+            break;
+
+        case 'o':
+            run('Db3');
+            break;
+
+        case 'l':
+            run('D3');
+            break;
+
+        case 'p':
+            run('Eb3');
+            break;
+
+        case ';':
+            run('E3');
+            break;   
+
+        default:
+            console.log('no key found');
+            break;
+    }
+})
+
 
 
